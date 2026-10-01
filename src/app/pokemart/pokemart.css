@@ -18,11 +18,25 @@ h1 {
   gap: 20px;
 }
 
+.shop-image {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shop-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
 .shop-item {
-  width: 220px;
+  width: 200px;
   padding: 20px;
-  border: 2px solid #333;
-  border-radius: 12px;
+  border: 3px solid #333;
+  border-radius: 4px;
   background-color: white;
 }
 

@@ -1,9 +1,9 @@
 <div class="pokemon-page">
 
-  <h1>My Favorite Pokémon</h1>
+  <h1> Pokémons</h1>
 
   <p class="subtitle">
-    Six Pokémon from Kanto, Johto, and Hoenn
+    Pokémons from Kanto, Johto, and Hoenn
   </p>
 
 
@@ -12,6 +12,11 @@
     @for (pokemon of pokemonService.pokemon(); track pokemon.id) {
 
       <div class="pokemon-card">
+        
+        <div class = "pokemon-image">
+          <img src="{{ pokemon.image }}" alt="{{ pokemon.name }}">
+
+        </div>
 
         <h2>{{ pokemon.name }}</h2>
 

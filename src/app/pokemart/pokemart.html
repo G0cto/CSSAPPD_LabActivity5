@@ -1,17 +1,23 @@
 <div class="pokemart-page">
 
-  <h1>---PokéMart---</h1>
+  <h1>PokéMart</h1>
 
   <p class="subtitle">
     Items available for purchase
   </p>
-
 
   <div class="shop-container">
 
     @for (item of pokemonService.shopItems(); track item.id) {
 
       <div class="shop-item">
+
+        <div class="shop-image">
+          <img
+            [src]="item.image"
+            [alt]="item.name"
+          >
+        </div>
 
         <h2>{{ item.name }}</h2>
 

@@ -20,15 +20,30 @@ h1 {
 }
 
 .pokemon-card {
-  width: 250px;
+  width: 200px;
   padding: 20px;
-  border: 2px solid #333;
-  border-radius: 12px;
+  border: 3px solid #333;
+  border-radius: 4px;
   background-color: white;
+  text-align: left;
 }
 
 .pokemon-card h2 {
   text-align: center;
+}
+
+.pokemon-image {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pokemon-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .pokemon-card p {
