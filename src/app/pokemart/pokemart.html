@@ -1,1 +1,35 @@
-<p>pokemart works!</p>
+<div class="pokemart-page">
+
+  <h1>---PokéMart---</h1>
+
+  <p class="subtitle">
+    Items available for purchase
+  </p>
+
+
+  <div class="shop-container">
+
+    @for (item of pokemonService.shopItems(); track item.id) {
+
+      <div class="shop-item">
+
+        <h2>{{ item.name }}</h2>
+
+        <p>{{ item.description }}</p>
+
+        <p class="price">
+          ${{ item.price }}
+        </p>
+
+        <button
+          (click)="pokemonService.addToCart(item)">
+          Add to Cart
+        </button>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

@@ -1,0 +1,42 @@
+.pokemart-page {
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shop-item {
+  width: 220px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.shop-item h2 {
+  text-align: center;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
