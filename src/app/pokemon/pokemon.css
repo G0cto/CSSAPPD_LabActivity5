@@ -1,0 +1,36 @@
+.pokemon-page {
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pokemon-card {
+  width: 250px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.pokemon-card h2 {
+  text-align: center;
+}
+
+.pokemon-card p {
+  line-height: 1.5;
+}

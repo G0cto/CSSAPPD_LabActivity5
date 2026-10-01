@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PokemonService } from '../pokemon.service';
 
 @Component({
-  imports: [],
   selector: 'app-pokemon',
-  styleUrl: './pokemon.css',
+  standalone: true,
+  imports: [],
   templateUrl: './pokemon.html',
+  styleUrl: './pokemon.css'
 })
-export class Pokemon {}
+export class Pokemon {
+
+  pokemonService = inject(PokemonService);
+
+}

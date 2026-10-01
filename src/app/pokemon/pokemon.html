@@ -1,1 +1,43 @@
-<p>pokemon works!</p>
+<div class="pokemon-page">
+
+  <h1>My Favorite Pokémon</h1>
+
+  <p class="subtitle">
+    Six Pokémon from Kanto, Johto, and Hoenn
+  </p>
+
+
+  <div class="pokemon-container">
+
+    @for (pokemon of pokemonService.pokemon(); track pokemon.id) {
+
+      <div class="pokemon-card">
+
+        <h2>{{ pokemon.name }}</h2>
+
+        <p>
+          <strong>Region:</strong>
+          {{ pokemon.region }}
+        </p>
+
+        <p>
+          <strong>Type:</strong>
+          {{ pokemon.type }}
+        </p>
+
+        <p>
+          <strong>Held Item:</strong>
+          {{ pokemon.heldItem }}
+        </p>
+
+        <p>
+          {{ pokemon.description }}
+        </p>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>
