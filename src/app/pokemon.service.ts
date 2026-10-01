@@ -21,10 +21,7 @@ export interface ShopItem {
 })
 export class PokemonService {
 
-  // ==========================================
   // POKEMON DATA
-  // ==========================================
-
   pokemon = signal<Pokemon[]>([
     {
       id: 1,
@@ -37,15 +34,24 @@ export class PokemonService {
 
     {
       id: 2,
-      name: 'Gengar',
+      name: 'Pikachu',
       region: 'Kanto',
-      type: 'Ghost / Poison',
-      heldItem: 'Spell Tag',
-      description: 'A mysterious Pokémon that hides in darkness.'
+      type: 'Electric',
+      heldItem: 'Light Ball',
+      description: 'A cute Pokémon that can generate electricity.'
     },
 
     {
       id: 3,
+      name: 'Chikorita',
+      region: 'Johto',
+      type: 'Grass',
+      heldItem: 'Miracle Seed',
+      description: 'A Grass-type Pokémon with a sweet scent.'
+    },
+
+    {
+      id: 4,
       name: 'Typhlosion',
       region: 'Johto',
       type: 'Fire',
@@ -54,21 +60,12 @@ export class PokemonService {
     },
 
     {
-      id: 4,
-      name: 'Ampharos',
-      region: 'Johto',
-      type: 'Electric',
-      heldItem: 'Magnet',
-      description: 'An Electric-type Pokémon with a bright tail.'
-    },
-
-    {
       id: 5,
-      name: 'Blaziken',
+      name: 'Treecko',
       region: 'Hoenn',
-      type: 'Fire / Fighting',
+      type: 'Grass',
       heldItem: 'Black Belt',
-      description: 'A powerful Pokémon that specializes in kicking attacks.'
+      description: 'A Grass-type Pokémon with humidity detection tail.'
     },
 
     {
@@ -81,11 +78,7 @@ export class PokemonService {
     }
   ]);
 
-
-  // ==========================================
   // POKEMART DATA
-  // ==========================================
-
   shopItems = signal<ShopItem[]>([
     {
       id: 1,
@@ -159,21 +152,14 @@ export class PokemonService {
   ]);
 
 
-  // ==========================================
   // CART STATE
-  // ==========================================
-
   private cartItems = signal<ShopItem[]>([]);
 
-  // Components can read the cart,
-  // but cannot directly modify it.
+  // Components can read the cart, but cannot directly modify it.
   cart = this.cartItems.asReadonly();
 
 
-  // ==========================================
   // COMPUTED TOTAL
-  // ==========================================
-
   totalPrice = computed(() =>
     this.cartItems().reduce(
       (sum, item) => sum + item.price,
@@ -182,10 +168,7 @@ export class PokemonService {
   );
 
 
-  // ==========================================
   // ADD ITEM TO CART
-  // ==========================================
-
   addToCart(product: ShopItem) {
 
     this.cartItems.update(current => [
@@ -196,10 +179,8 @@ export class PokemonService {
   }
 
 
-  // ==========================================
-  // CLEAR CART
-  // ==========================================
 
+  // CLEAR CART
   clearCart() {
 
     this.cartItems.set([]);
