@@ -1,0 +1,12 @@
+.home-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-page h1 {
+  font-size: 40px;
+}
+
+.home-page p {
+  font-size: 18px;
+}
