@@ -1,1 +1,42 @@
-<p>cart works!</p>
+<div class="cart-page">
+
+  <h1>---Shopping Cart---</h1>
+
+
+  @for (item of pokemonService.cart(); track $index) {
+
+    <div class="cart-item">
+
+      <span>
+        {{ item.name }}
+      </span>
+
+      <span>
+        ${{ item.price }}
+      </span>
+
+    </div>
+
+  } @empty {
+
+    <p class="empty-cart">
+      Cart is empty.
+    </p>
+
+  }
+
+
+  <hr>
+
+
+  <h2>
+    Total: ${{ pokemonService.totalPrice() }}
+  </h2>
+
+
+  <button
+    (click)="pokemonService.clearCart()">
+    Checkout / Clear
+  </button>
+
+</div>
