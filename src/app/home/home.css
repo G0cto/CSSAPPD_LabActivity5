@@ -1,12 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .home-page {
+  background-image: url('https://projectpokemon.org/home/uploads/monthly_2020_01/large.Load_wp06.png.7be5e3a5223b3fca18fcea31a52d628e.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+  min-height: 100vh;
+  box-sizing: border-box;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
   padding: 60px 20px;
 }
 
 .home-page h1 {
-  font-size: 40px;
+font-family: 'Press Start 2P', monospace;
+  font-size: 48px;
+  margin-top: 0;
+  color: gold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #202020;
 }
 
 .home-page p {
-  font-size: 18px;
+font-family: 'Press Start 2P', monospace;
+  font-size: 24px;
+  color: yellow;
+  text-shadow: 3px 3px #202020;
 }

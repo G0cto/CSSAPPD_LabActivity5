@@ -1,14 +1,25 @@
 .pokemart-page {
   padding: 30px;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9da26d1-c46d-4836-9f4d-32b852157274/d8mpu2b-3cba9f64-f5a7-494f-878e-dd3d1275f089.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jOWRhMjZkMS1jNDZkLTQ4MzYtOWY0ZC0zMmI4NTIxNTcyNzQvZDhtcHUyYi0zY2JhOWY2NC1mNWE3LTQ5NGYtODc4ZS1kZDNkMTI3NWYwODkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lOyYoiAXvMcxaOaMCweeq69N4kly8xDseVNiNpty1jI');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  image-rendering: pixelated; /* Keeps pixel art sharp when stretched */
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .subtitle {
   text-align: center;
   margin-bottom: 30px;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .shop-container {
@@ -37,7 +48,7 @@ h1 {
   padding: 20px;
   border: 3px solid #333;
   border-radius: 4px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .shop-item h2 {
